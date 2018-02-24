@@ -45,4 +45,8 @@ class Song
     new
   end
 
+  def create_from_filename(file)
+    new_from_filename(file)
+  end
+
 end
