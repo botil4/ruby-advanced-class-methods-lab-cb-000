@@ -39,7 +39,7 @@ class Song
   end
 
   def self.new_from_filename(file)
-    file_split = file.split(/[-.]\s?/)
+    file_split = file.split(/\s?[-.]\s?/)
     new = create_by_name(file_split[1])
     new.artist_name = file_split[0]
     new
