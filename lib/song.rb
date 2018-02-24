@@ -42,6 +42,7 @@ class Song
     file_split = file.split(/[-.]/)
     new = create_by_name(file_split[1])
     new.artist_name = file_split[0]
+    new
   end
 
 end
