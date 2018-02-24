@@ -27,11 +27,15 @@ class Song
   end
 
   def self.find_by_name(name)
-    self.all.detect {|song| song.name == name}
+    all.detect {|song| song.name == name}
   end
 
   def self.find_or_create_by_name(name)
     find_by_name(name) == nil ? create_by_name(name) : find_by_name(name)
+  end
+
+  def self.alphabetical
+
   end
 
 end
